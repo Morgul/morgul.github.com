@@ -1,4 +1,13 @@
 html
 {
-    background-color: #9ce;
+    background-color: #acd;
+}
+
+body article
+{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #bbb;
 }
