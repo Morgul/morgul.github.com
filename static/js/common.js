@@ -1,59 +1,54 @@
 // On Page Load
 $(function()
 {
-    var buttons_left = $("div.fme.left span.button");
-    buttons_left.each(function(index, elem)
+
+    var onHover = function(ev)
     {
-            $(elem).hover(function ()
-            {
-                $(elem).stop();
-                $(elem).animate({top:'0'}, 300);
-            },
-            function ()
-            {
-                $(elem).stop();
-                $(elem).animate({top:'-35px'}, 300);
-            }
-        );
+        $(ev.target).stop().animate({top: '0'}, 350, 'easeInQuad');
+        $(ev.target).find("img.grey").stop().animate({opacity:'0'}, 300);
+    };
+
+    var onUnHover = function(ev)
+    {
+        $(ev.target).stop().animate({top:'-35px'}, 350, 'easeInQuad');
+        $(ev.target).find("img.grey").stop().animate({opacity:'1'}, 300);
+    };
+
+    var buttons = $("div.fme span.button");
+    buttons.each(function(index, elem)
+    {
+            $(elem).hover(onHover, onUnHover);
     });
 
     var banner_left = $("div.fme.left div.banner");
     banner_left.hover(function()
     {
-        buttons_left.stop();
-        buttons_left.animate({top:'0'}, 300);
+        $("div.fme.left span.button").each(function(index, elem)
+        {
+            onHover({target: elem});
+        });
     },
-    function()
+    function(ev)
     {
-        buttons_left.stop();
-        buttons_left.animate({top:'-35px'}, 300);
-    });
-
-    var buttons_right = $("div.fme.right span.button");
-    buttons_right.each(function(index, elem)
-    {
-            $(elem).hover(function ()
-            {
-                $(elem).stop();
-                $(elem).animate({top:'0'}, 300);
-            },
-            function ()
-            {
-                $(elem).stop();
-                $(elem).animate({top:'-35px'}, 300);
-            }
-        );
+        $("div.fme.left span.button").each(function(index, elem)
+        {
+            onUnHover({target: elem});
+        });
     });
 
     var banner_right = $("div.fme.right div.banner");
-        banner_right.hover(function()
+    banner_right.hover(function()
         {
-            buttons_right.stop();
-            buttons_right.animate({top:'0'}, 300);
+            $("div.fme.right span.button").each(function(index, elem)
+            {
+                onHover({target: elem});
+            });
         },
-        function()
+        function(ev)
         {
-            buttons_right.stop();
-            buttons_right.animate({top:'-35px'}, 300);
+            $("div.fme.right span.button").each(function(index, elem)
+            {
+                onUnHover({target: elem});
+            });
         });
 });
