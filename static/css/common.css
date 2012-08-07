@@ -1,6 +1,6 @@
 html
 {
-    background: #47423C url(../images/background_blend.png) no-repeat center top;
+    background: #47423C url(../images/background-collapsar.jpg) no-repeat center top;
     padding: 0;
     margin: 0;
 
@@ -15,27 +15,42 @@ body
 
 body article
 {
+    color: #ccc;
+
     width: 1200px;
+    padding: 15px;
     margin-left: auto;
     margin-right: auto;
 
+    /*
     background-color: rgba(0, 0, 0, .3);
-    padding: 5px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    */
+
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 5px 5px 20px 20px;
+    background: rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(128,128,128,0.3), inset 0 10px rgba(128,128,128,0.1), inset 0 10px 20px rgba(128,128,128,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+    -o-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(128,128,128,0.3), inset 0 10px rgba(128,128,128,0.1), inset 0 10px 20px rgba(128,128,128,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(128,128,128,0.3), inset 0 10px rgba(128,128,128,0.1), inset 0 10px 20px rgba(128,128,128,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(128,128,128,0.3), inset 0 10px rgba(128,128,128,0.1), inset 0 10px 20px rgba(128,128,128,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+
 }
 
 h1
 {
+    color: black;
     margin-top: -10px;
     margin-bottom: -10px;
     font-size: 60px;
-    text-shadow: 0 1px 1px #777;
+    text-shadow: 0 1px 1px #333;
 }
 
 h2
 {
-    text-shadow: 0 1px 1px #555;
+    color: black;
+    text-shadow: 0 1px 1px #333;
 }
 
 header,
@@ -59,13 +74,13 @@ section#objective aside
     padding-right: 10px;
 
     text-align: left;
-    text-shadow: 0 1px 1px #666;
+    text-shadow: 0 1px 1px #111;
 
     width: 850px;
 
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
-    background-color: rgba(128, 128, 128, .4);
+    background-color: rgba(64, 64, 64, .2);
 
 }
 
@@ -89,9 +104,9 @@ div.fme.left
 div.fme .banner
 {
     width: 150px;
-    padding: 0 5px 0 5px;
-    background-color: rgb(25, 25, 25);
-
+    /*padding: 0 5px 0 5px;
+    background: rgb(25, 25, 25) url('../images/fme_bg.png') no-repeat center top;
+*/
     color: #ccc;
 
     text-align: center;
@@ -106,11 +121,11 @@ div.fme .banner
 
 div.fme span.button
 {
-    width: 35px;
+    width: 36px;
     height: 45px;
     padding: 0 5px 0 5px;
 
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 4);
 
     text-align: center;
 
@@ -138,4 +153,31 @@ div.fme span.button.right
 {
     float: right;
     margin-right: 25px;
+}
+
+div.fme img
+{
+	position: absolute;
+	top: 0;
+	left: 7px;
+}
+
+div.fme img.grey
+{
+	z-index: 2;
+}
+
+div.glass
+{
+     width: 100%;
+     height: 100%;
+
+     padding: 0;
+     border: 1px solid rgba(0,0,0,0.5);
+     border-radius: 4px 4px 10px 10px;
+     background: rgba(0,0,0,0.8) url('../images/fme_bg.png') no-repeat center top;
+     box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(192,192,192,0.3), inset 0 10px rgba(192,192,192,0.1), inset 0 10px 20px rgba(192,192,192,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+     -o-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(192,192,192,0.3), inset 0 10px rgba(192,192,192,0.1), inset 0 10px 20px rgba(192,192,192,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+     -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(192,192,192,0.3), inset 0 10px rgba(192,192,192,0.1), inset 0 10px 20px rgba(192,192,192,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+     -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(192,192,192,0.3), inset 0 10px rgba(192,192,192,0.1), inset 0 10px 20px rgba(192,192,192,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
 }
