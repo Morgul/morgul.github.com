@@ -1,58 +1,98 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
     <head>
-        <title>Christopher S. Case's Resume</title>
-        <link rel="stylesheet" type="text/css" href="static/css/common.css" />
-        <link rel="stylesheet" type="text/css" href="static/css/fonts.css" />
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="static/js/common.js"></script>
+        <title>Morgul's Site</title>
+
+        <link rel="icon" type="image/png" href="http://www.gravatar.com/avatar/f192c76b541d4a17a32897fc7b0781a1.png?s=32">
+
+        <!-- Styles -->
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/common.css" rel="stylesheet">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+        <!-- Scripts -->
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="fme right">
-            <div class="glass banner">Fork Me</div>
-            <span class="button left">
-                <img src="static/images/bucket.png" alt="BB" title="BitBucket" onclick="window.location.href='https://bitbucket.org/morgul/'"/>
-                <img class="grey" src="static/images/bucket_grey.png" alt="BB" title="BitBucket" onclick="window.location.href='https://bitbucket.org/morgul/'"/>
-            </span>
-            <span class="button right">
-                <img src="static/images/github.png" alt="GH" title="GitHub" onclick="window.location.href='https://github.com/Morgul/'"/>
-                <img class="grey" src="static/images/github_grey.png" alt="GH" title="GitHub" onclick="window.location.href='https://github.com/Morgul/'"/>
-            </span>
+        <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/"><div class="avatar"></div> Christopher S. Case</a>
+                </div>
+                <p class="navbar-text navbar-right">
+                    <a href="https://github.com/Morgul" class="navbar-link"><i class="fa fa-fw fa-lg fa-github-square text-color-black"></i>GitHub</a>
+                    <a href="https://bitbucket.org/morgul" class="navbar-link"><i class="fa fa-fw fa-lg fa-bitbucket-square text-color-black"></i>BitBucket</a>
+                    <a href="https://plus.google.com/+ChristopherCase/posts" class="navbar-link"><i class="fa fa-fw fa-lg fa-google-plus-square text-color-black"></i>Google+</a>
+                </p>
+            </div>
+        </nav>
+        <div class="container main-body">
+            <div class="quote">
+                <div class="quote-inner">
+                    <p>"Designing the perfect solution to a tough problem is the best part about being a software engineer."</p>
+                </div>
+            </div>
+            <p>
+                This site started more as a solution looking for a problem. I knew I wanted to showcase my web skills
+                with an online resum&eacute;, but most of the websites I build <i>do</i> something; they're not purely
+                communicative, like this one. (They're also never about <i>me</i>, which makes this harder.) But, I like
+                a challenge, so this is my attempt at an online profile/resum&eacute;.
+            </p>
+            <h2 class="text-center">About</h2>
+            <p>
+                I'm a software engineer, currently employed at <a href="http://armt.com/">ARMtech Insurance Services, Inc.</a>
+                I work on the Mapping Team, building a web-based frontend to our geospatial data, similar in concept
+                to Google Maps (but with a munch of their features, like multiple layers, user-drawn shapes, editing, etc.)
+                I also write a large number of <a href="http://nodejs.org">node.js</a> based services (not always
+                directly related to mapping).
+            </p>
+            <h3>Hobbies</h3>
+            <p>
+                When I'm not working with the latest web technologies, I'm working on personal projects including
+                writing a MMORPG in <a href="http://www.erlang.org/">Erlang</a> and <a href="http://qt-project.org/">C++/QML</a>.
+                I've been leading a small group of people on this project for several years, and though we've gone through
+                several rewrites, it's been a huge learning tool.
+            </p>
+            <p>
+                In addition to programming, I also write fiction, as well as work with my wife on several of her illustration
+                projects. The two if us even have an infrequently updated <a href="http://bedlam.skewedaspect.com">webcomic</a>.
+            </p>
+            <h2 class="text-center">Experience</h2>
+            <h4 class="exp-heading">
+                ARMtech Insurance Services, Inc.
+                <small><i>2012 - Current</i></small>
+            </h4>
+            <p>
+                I work on the Mapping Team, focusing on using web technologies to build the next generation of our
+                geospatial application. In addition, I write and maintain several node.js services.
+            </p>
+            <h4 class="exp-heading">
+                KGB, Inc.
+                <small><i>2009 - 2012</i></small>
+            </h4>
+            <p>
+                TBD.
+            </p>
+            <h4 class="exp-heading">
+                Texas Tech, University
+                <small><i>2008 - 2009</i></small>
+            </h4>
+            <p>
+                TBD.
+            </p>
         </div>
-        <div class="fme left">
-            <div class="glass banner">Find Me</div>
-            <span class="button left">
-                <img src="static/images/facebook.png" alt="FB" title="Facebook" onclick="window.location.href='http://www.facebook.com/christopher.s.case'"/>
-                <img class="grey" src="static/images/facebook_grey.png" alt="FB" title="Facebook" onclick="window.location.href='http://www.facebook.com/christopher.s.case'"/>
-            </span>
-            <span class="button right">
-                <img src="static/images/gplus.png" alt="G+" title="Google Plus" onclick="window.location.href='https://plus.google.com/106667894022362212239/posts'"/>
-                <img class="grey" src="static/images/gplus_grey.png" alt="G+" title="Google Plus" onclick="window.location.href='https://plus.google.com/106667894022362212239/posts'"/>
-            </span>
+
+        <hr>
+            <div class="text-center">
+                <i>This site is a work in progress. It will be finished at some point.</i>
+            </div>
+        <hr>
+
+        <div class="footer">
+            <p><small>2014 &copy; Christopher S. Case. All Rights Reserved.</small></p>
+            <p><small class="text-muted">All code for this site is MIT licensed.</small></p>
         </div>
-        <article>
-            <header>
-                <h1>Christopher S. Case</h1>
-                &laquo; <span>Lubbock, TX</span> &verbar; <span>806.368.1407</span> &verbar; <span>chris.case@g33xnexus.com</span> &raquo;
-            </header>
-            <section id="objective">
-                <blockquote>To solve problems, develop innovative solutions, and craft software.</blockquote>
-                <aside>
-                    <p>This page is currently under construction. I intended it as an interactive resume; a place where I could show off my skills as a webdeveloper, while also having it function like a proper resume. I'm not sure if I'm going to meet either goal; but it's been an interesting test so far.</p>
-                    <p>This page is hosted on github pages, and I've found that a very useful tool. (I also happen to stringly support some of the underlying technology, so using it's a bit of a statement, as much as anything else.)</p>
-                    <p>All code, the site design, etc, is opensource. Consider it MIT licensed, unless spcificified.</p>
-                </aside>
-            </section>
-            <section id="education">
-                <h2>Education</h2>
-            </section>
-            <section id="experience">
-                <h2>Experience</h2>
-            </section>
-            <section id="portfolio">
-                <h2>Portfolio</h2>
-            </section>
-        </article>
     </body>
 </html>
